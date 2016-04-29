@@ -1,0 +1,15 @@
+{
+  "name": "url-helpers",
+  "version": "0.0.1",
+  "description": "imSold URL helpers for generating links on the website.",
+  "main": "helpers.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Warren <warren@701search.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
