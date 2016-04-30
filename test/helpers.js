@@ -78,4 +78,11 @@ describe('Slug helper', function(){
     var slug = helpers.slug('The QUICK brown fox jumps over the lazy and ugly dog');
     slug.should.equal('the-quick-brown-fox-jumps-over-the-lazy-and-ugly-dog');
   })
+});
+
+describe('Property', function(){
+  it('"version" should return 0.0.2', function(){
+    var helpers = new Helpers();
+    helpers.version.should.equal('0.0.2');
+  });
 })

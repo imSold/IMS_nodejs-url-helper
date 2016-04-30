@@ -1,3 +1,5 @@
+var package = require('./package.json');
+
 /**
  * imSold URL helpers for back-end and front-end codes
  */
@@ -51,5 +53,7 @@ Helpers.prototype.slug = function(string) {
     .replace(/\"/g, '') /* replace double quote with nothing */
     .replace(/\//g, ''); /* replace slash with nothing */
 };
+
+Helpers.prototype.version = package.version;
 
 module.exports = Helpers;

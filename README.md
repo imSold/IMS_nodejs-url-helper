@@ -26,4 +26,13 @@ console.log(newUrl);
 
 ```
 
+## version
+Simply get package version
+
+```
+var helpers = new Helpers();
+console.log(helpers.version)
+// return 0.0.x
+```
+
 @todo installation instruction, browserify instruction
