@@ -2,6 +2,14 @@
 
 imSold URL helpers for generating links on the website, front-end and backend.
 
+## Require example
+```
+var Helpers = require("@imsold/url-helpers");
+var helpers = new Helpers();
+console.log(helpers.version);
+// return 0.0.x
+```
+
 ## slug
 Parameters in the constructor is optional
 
