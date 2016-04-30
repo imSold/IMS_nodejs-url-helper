@@ -81,8 +81,9 @@ describe('Slug helper', function(){
 });
 
 describe('Property', function(){
-  it('"version" should return 0.0.2', function(){
+  it('"version" should return correct version', function(){
+    var package = require("../package.json");
     var helpers = new Helpers();
-    helpers.version.should.equal('0.0.2');
+    helpers.version.should.equal(package.version);
   });
 })
