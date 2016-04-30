@@ -1,15 +1,20 @@
 {
   "name": "@imsold/url-helpers",
   "version": "0.0.2",
+  "private": true,
   "description": "imSold URL helpers for generating links on the website.",
   "main": "helpers.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "author": "Warren <warren@701search.com>",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/imSold/IMS_nodejs-url-helper.git"
   }
 }
