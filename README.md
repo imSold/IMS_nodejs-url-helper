@@ -2,6 +2,12 @@
 
 imSold URL helpers for generating links on the website, front-end and backend.
 
+## Installation
+```
+npm install --save https://github.com/imSold/IMS_nodejs-url-helper/archive/v0.0.3.tar.gz
+```
+<sup>- v0.0.3 can be any version that was released.<br/>- Make sure you have the rights to access this repository.</sup>
+
 ## Require example
 ```
 > var Helpers = require("@imsold/url-helpers");
