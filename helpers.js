@@ -46,7 +46,10 @@ Helpers.prototype.url = function(routeName, params) {
 * @return {String}
 */
 Helpers.prototype.slug = function(string) {
-  if (typeof string === "undefined") throw new Error('slug string is required');
+  if (typeof string === "undefined") {
+    console.error('slug string is required');
+    return '';
+  }
 
   return string.toLowerCase()
     .replace(/\&/g, 'and') /* replace & with and */
