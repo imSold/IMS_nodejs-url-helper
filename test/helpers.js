@@ -67,6 +67,15 @@ describe('URL helper', function(){
 });
 
 describe('Slug helper', function(){
+  it('should return an error if string is empty', function(){
+    try {
+      var helpers = new Helpers();
+      var slug = helpers.slug();
+    } catch (e) {
+      e.message.should.equal('slug string is required');
+    }
+  });
+
   it('should translate string with symbols', function(){
     var helpers = new Helpers();
     var slug = helpers.slug('The "quick" / \'brown\' fox / jumps:over / the lazy & ugly dog.$');
