@@ -51,7 +51,7 @@ Helpers.prototype.slug = function(string) {
     return '';
   }
 
-  return string.toLowerCase()
+  return encodeURIComponent(string).toLowerCase()
     .replace(/\&/g, 'and') /* replace & with and */
     .replace(/\s+/g, '-') /* replace spaces with - */
     .replace(/\'/g, '') /* replace single quote with nothing */
