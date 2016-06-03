@@ -51,12 +51,14 @@ Helpers.prototype.slug = function(string) {
     return '';
   }
 
-  return encodeURIComponent(string).toLowerCase()
+  string = string.toLowerCase()
     .replace(/\&/g, 'and') /* replace & with and */
     .replace(/\s+/g, '-') /* replace spaces with - */
     .replace(/\'/g, '') /* replace single quote with nothing */
     .replace(/\"/g, '') /* replace double quote with nothing */
     .replace(/\//g, ''); /* replace slash with nothing */
+
+  return encodeURIComponent(string);
 };
 
 Helpers.prototype.version = package.version;
