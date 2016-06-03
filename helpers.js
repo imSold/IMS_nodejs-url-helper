@@ -53,6 +53,7 @@ Helpers.prototype.slug = function(string) {
 
   string = string.toLowerCase()
     .replace(/\&/g, 'and') /* replace & with and */
+    .replace(/\@/g, 'at') /* replace @ with at */
     .replace(/\s+/g, '-') /* replace spaces with - */
     .replace(/\'/g, '') /* replace single quote with nothing */
     .replace(/\"/g, '') /* replace double quote with nothing */
