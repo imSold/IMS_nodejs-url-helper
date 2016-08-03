@@ -31,7 +31,11 @@ Helpers.prototype.url = function(routeName, params) {
   if (typeof this.baseUrl === "undefined") throw new Error('baseUrl is required as second argument');
 
   params = params || '';
-  var url = this.baseUrl + this.routes[routeName];
+  var url = this.baseUrl;
+
+  if (routeName in this.routes) {
+    url += this.routes[routeName];
+  }
 
   for (param in params) {
     url = url.replace(':'+param, params[param]);
