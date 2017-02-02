@@ -1,5 +1,5 @@
 {
-  "name": "url-helpers",
+  "name": "imsold-url-helpers",
   "version": "0.0.3",
   "description": "imSold URL helpers for generating links on the website.",
   "main": "helpers.js",
